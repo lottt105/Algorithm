@@ -1,1 +1,1 @@
-const solution = (n) => n <= 7 ? 1 : Math.ceil(n / 7)
+const solution = (n) => Math.ceil(n / 7)
