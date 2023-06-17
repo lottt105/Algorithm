@@ -9,7 +9,11 @@ let input = [];
 rl.on('line', (line) => {
     input = line.split(' ');
 }).on('close', () => {
-    for (let i = 1; i <= Number(input[0]); i++){
+    solution(Number(input[0]));
+});
+
+const solution = (len) => {
+    for (let i = 1; i <= len; i++){
         console.log("*".repeat(i));
     }
-});
+}
