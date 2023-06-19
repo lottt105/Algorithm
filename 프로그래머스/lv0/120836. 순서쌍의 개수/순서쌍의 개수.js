@@ -1,16 +1,7 @@
 const solution = (n) => {
-    let a = 1;
-    let b = n;
     let answer = 0;
-    if (n === 1) return 1;
-    while (a < b) {
-        if (n % a === 0) {
-            answer++;
-            b = n / a;
-        }
-        a++;
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) answer++;
     }
-    
-    if (a-1 === b) return (answer - 1) * 2 + 1;
-    return answer * 2;
+    return answer;
 }
