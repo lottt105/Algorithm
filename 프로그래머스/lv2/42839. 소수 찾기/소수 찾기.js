@@ -1,10 +1,10 @@
 function solution(numbers) {
-    const permutation = (permu, rests, output) => {
-        output.push(Number(permu));
+    const permutation = (permu, rests) => {
+        nums.push(Number(permu));
         if(rests.length === 0) return;
         rests.forEach((v, idx) => {
             const rest = [...rests.slice(0, idx), ...rests.slice(idx + 1)];
-            permutation(permu + v, rest, output)
+            permutation(permu + v, rest)
         });
     }
     
