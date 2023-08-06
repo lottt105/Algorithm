@@ -14,6 +14,6 @@ function solution(word) {
     
     let count = 0;
     let check = false;
-    dfs('', ['A', 'E', 'I', 'O', 'U']);
+    dfs('', 'AEIOU');
     return count - 1;
 }
