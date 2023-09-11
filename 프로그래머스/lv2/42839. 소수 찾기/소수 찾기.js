@@ -18,7 +18,7 @@ function solution(numbers) {
     }
     
     const nums = [];
-    permutation('', [...numbers], nums);
+    permutation('', [...numbers]);
     
     const sets = [...new Set(nums)];
     return sets.filter(s => s > 1 && isPrime(s)).length;
