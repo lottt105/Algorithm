@@ -20,7 +20,6 @@ function solution(queue1, queue2) {
             sum2 += n;
         }
         result++;
-        if(queue1.length === 0 || queue2.length === 0) break;
     }
     return -1;
 }
