@@ -22,9 +22,7 @@ function solution(topping) {
             l++;
         }
         right[t]--;
-        if(right[t] === 0){
-            r--;
-        }
+        if(right[t] === 0) r--;
         if(l === r) result++
     }
     return result
