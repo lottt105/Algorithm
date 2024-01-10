@@ -10,9 +10,8 @@ function solution(book_time) {
     
     for(let t = 1; t < time_num.length; t++){
         const [start, end] = time_num[t];
-        rooms.sort((a, b) => a - b);
         
-        if(start < rooms[0]){
+        if(start < Math.min(...rooms)){
             rooms.push(end + 10);
             continue;
         }
