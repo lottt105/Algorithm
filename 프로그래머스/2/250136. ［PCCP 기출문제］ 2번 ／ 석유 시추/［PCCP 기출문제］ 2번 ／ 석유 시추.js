@@ -10,6 +10,7 @@ function solution(land) {
         while(queue.length){
             [nextI, nextJ] = queue.shift();
             cnt += 1;
+            // 석유 덩어리의 마지막 열
             if(nextJ > end) end = nextJ;
             
             if(nextJ < cLen - 1 && land[nextI][nextJ+1]) {
@@ -39,7 +40,6 @@ function solution(land) {
             if(land[i][j] === 1){
                 const count = findOil(i, j);
                 for(let c = j; c <= end; c++) columns[c] += count;
-                console.log(count)
                 end = 0;
             }
         }
